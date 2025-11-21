@@ -16,7 +16,7 @@ The portfolio is structured according to the specialization's curriculum, with d
 
 | Course # | Folder Title | Primary Focus |
 | :--- | :--- | :--- |
-| **1** | `01_Preparing_Data_for_Analysis_with_Microsoft_Excel`](./01_Preparing_Data_for_Analysis_with_Microsoft_Excel) | Data transformation, cleansing, and standardization using Excel functions. |
+| **1** | `01_Preparing_Data_for_Analysis_with_Microsoft_Excel` | Data transformation, cleansing, and standardization using Excel functions. |
 | **2** | `02_Harnessing_the_Power_of_Data_with_Power_BI` | Introduction to Power BI, its interface, and basic data concepts. |
 | **3** | `03_Extract_Transform_and_Load_Data_in_Power_BI` | In-depth use of Power Query (ETL) for cleaning and shaping data. |
 | **4** | `04_Data_Modeling_in_Power_BI` | Creating robust data models, relationships, and understanding cardinality. |
