@@ -9,15 +9,15 @@ This module covers the essential building blocks of Microsoft Excel, establishin
 Understanding the layout and file constraints is the first step to efficient data management.
 
 ### Key UI Elements
-* **Title Bar:** Located at the top, it displays the filename, the Autosave button, and the Search box for finding tools or content.
-* **The Ribbon:** Located below the title bar, containing Command tabs (e.g., Home, Insert) which organize hundreds of commands.
-    * *Contextual Tabs:* Special tabs (e.g., Chart Design) that only appear when specific items, like a chart, are selected.
-* **Formula Bar:** Displays the actual contents of a cell (the formula or data) even if the cell displays a calculated result.
-* **Worksheet Grid:** The primary area for data entry, divided into rows and columns where cells intersect.
+* **Title Bar:** Located at the very top of the window, this bar displays the current filename, the Autosave toggle switch, and the central Search box used for finding specific tools or content.
+* **The Ribbon:** The main control panel located immediately below the title bar. It contains specific **Command tabs** (like *Home*, *Insert*, *Data*) that organize hundreds of commands into logical groups.
+    * *Contextual Tabs:* These are hidden tabs (e.g., *Chart Design*) that automatically appear on the ribbon only when you select a specific object, like a chart or table.
+* **Formula Bar:** A long bar located above the grid letters (A, B, C...). It displays the *actual* underlying content of a selected cell (such as a formula or raw data), even if the cell itself displays a formatted result.
+* **Worksheet Grid:** The primary area for data entry, composed of a grid where vertical columns (identified by letters) and horizontal rows (identified by numbers) intersect to form cells.
 
 ### File Naming Conventions
-* Filenames can contain spaces and capital letters but should avoid special punctuation as some characters are not permitted.
-* **Character Limit:** Filenames can have up to 255 characters, though keeping it under 31 is recommended.
+* Filenames can contain spaces and capital letters, but you must avoid special punctuation characters (like slashes or colons) as they are not permitted by the file system.
+* **Character Limit:** While filenames can technically support up to 255 characters, it is best practice to keep them under 31 characters for readability and compatibility.
 
 ---
 
@@ -26,34 +26,32 @@ Understanding the layout and file constraints is the first step to efficient dat
 Correctly entering and formatting data ensures readability and prevents calculation errors.
 
 ### Data Types and Alignment
-* **Default Alignment:** Text aligns to the **left**, while numbers align to the **right**.
-* **Mixed Data:** Excel treats any entry containing both letters and numbers as **text**.
-* **Display Errors:**
-    * If a number is too long for the column width, Excel may display it in **Scientific Notation** (e.g., `1E+09`).
-    * If the column is too narrow for the content, it may display repeating **Hash Symbols** (`####`).
-
-![Scientific notation and hash symbol errors](./assets/excel_width_errors.png)
+* **Default Alignment:** When you type data, Excel automatically aligns **text to the left** and **numbers to the right**. This provides a quick visual cue to check if your numbers are being recognized correctly.
+* **Mixed Data:** If a cell contains a mix of letters and numbers (e.g., "ID-123"), Excel treats the entire entry as **text**.
+* **Visual Error Indicators:**
+    * **Scientific Notation:** If a number is too wide for the column, Excel displays it in a compressed format like `1E+09`. This is not an error, but a display setting indicating you need to widen the column.
+    * **Hash Symbols (####):** If a column is too narrow to display the formatted content (often dates or currency), Excel fills the cell with pound signs (`####`). Widen the column to reveal the data.
 
 ### Entry Shortcuts
-* **Autocomplete:** Excel suggests words based on previous entries in the same column.
-* **Autofill:** Using the mouse pointer (which changes to a narrow black cross) on the bottom right corner of a cell to drag and copy data into adjacent cells.
-* **Format Painter:** A tool on the Home ribbon that copies format settings from one cell to paint onto others.
+* **Autocomplete:** As you type text, Excel looks at the column above and suggests matching words to speed up entry.
+* **Autofill Handle:** Hover over the bottom-right corner of a selected cell until the cursor changes to a **narrow black cross**. Dragging this handle copies data or extends a series into adjacent cells.
+* **Format Painter:** Represented by a **paintbrush icon** on the Home ribbon, this tool copies the style (font, color, border) from a selected cell so you can "paint" that style onto other cells.
 
 ### Visualization Tools
-* **Wrap Text:** Stacks words vertically within a cell to make the full heading visible without widening the column.
-* **Number Formatting:** Tools to set Currency, Percentages (which multiplies the cell content by 100), or Decimal places.
+* **Wrap Text:** Keeps the column width fixed but increases the row height, stacking long text vertically within the cell so the full heading is visible.
+* **Number Formatting:** Tools in the *Home* tab allow you to format numbers as Currency, Percentages (note: this mathematically multiplies the cell content by 100), or adjust Decimal places.
 
 ---
 
 ## 🌍 Regional Variations and Settings
 
-Excel adapts formats based on geographic location, which is critical for global data compatibility.
+Excel adapts formats based on your computer's geographic settings, which is critical for global data compatibility.
 
-* **Date/Time Systems:** Formats vary by region (e.g., `MM/DD/YYYY` vs. `DD/MM/YYYY`) based on Windows settings, though custom formats can be applied via the Number group.
-* **Separators:** Regions differ in using commas or periods for decimals.
-    * *Impact on Formulas:* If Excel is set to use the comma as a decimal separator, function arguments must be separated by **semicolons**.
-* **Date Systems:** Excel defaults to the 1900 date system, but some Mac versions use the 1904 date system, which can affect date calculations.
-* **Customization:** These defaults can be overridden in `File > Options > Advanced` by unchecking "Use system separators".
+* **Date/Time Systems:** The order of days and months (e.g., `MM/DD/YYYY` vs. `DD/MM/YYYY`) is determined by Windows settings. You can manually override this using the "More Number Formats" menu.
+* **Decimal Separators:** Some regions use a **period (.)** for decimals, while others use a **comma (,)**.
+    * *Formula Impact:* If your region uses commas for decimals, you must use **semicolons (;)** instead of commas to separate arguments inside formulas.
+* **Date Systems:** Windows Excel defaults to the **1900 date system**, whereas some Mac versions use the **1904 date system**. Be cautious when copying dates between operating systems.
+* **Customization:** You can override system defaults without changing your computer's settings by going to `File > Options > Advanced` and unchecking "Use system separators".
 
 ---
 
@@ -62,18 +60,14 @@ Excel adapts formats based on geographic location, which is critical for global 
 Efficiently managing the structure of a workbook allows for better organization of large datasets.
 
 ### Managing Rows and Columns
-* **Resizing:** Drag the separator line between headers or **double-click** it to auto-fit the width/height to the content.
-![Resizing columns cursor](./assets/resize_columns.png)
-* **Hiding/Unhiding:** Used to simplify views without deleting data. To unhide a column, you must first select the columns surrounding the hidden section.
-* **Inserting:** New columns appear to the **left** of the selection; new rows appear **above** the selection (or via right-click menu).
-![Insert menu options](./assets/insert_menu.png)
+* **Resizing:** Hover your mouse over the dividing line between two column headers (e.g., between A and B) until the cursor becomes a **double-headed arrow**. Click and drag to resize, or **double-click** to auto-fit the width to the content.
+* **Hiding/Unhiding:** Used to simplify views without deleting data. To reveal a hidden column (e.g., Column B), you must select the visible columns on *both sides* of it (Columns A and C) before clicking "Unhide".
+* **Inserting:** When you insert a new column, it always appears to the **left** of your selection. New rows always appear **above** your selection.
 
 ### Managing Worksheets (Tabs)
-* **Organization:** Tabs can be renamed (double-click) and recolored (right-click) to categorize data.
-![Tab Color menu](./assets/tab_color_menu.png)
-* **Duplication:** Use the "Move or Copy" command (right-click tab) to create an exact clone of a sheet to preserve original data.
-![Move or Copy dialog box](./assets/move_or_copy_dialog.png)
-* **Deletion Warning:** Unlike other actions, deleting a worksheet is **permanent** and cannot be reversed using Undo.
+* **Organization:** The tabs at the bottom of the screen represent individual sheets. **Double-click** a tab to rename it, or **right-click** to change the tab color for visual categorization.
+* **Duplication:** To create an exact clone of a sheet (useful for preserving raw data), right-click the tab, select "Move or Copy," and ensure the **"Create a copy"** box is checked.
+* **Deletion Warning:** Unlike deleting text or cells, deleting a worksheet is **permanent** and cannot be reversed using the Undo button.
 
 ---
 
@@ -82,19 +76,18 @@ Efficiently managing the structure of a workbook allows for better organization 
 Techniques to view and edit massive spreadsheets without losing context.
 
 ### View Features
-* **Freeze Panes:** Keeps specific rows (usually headers) or columns static while scrolling through the rest of the data (found in the View ribbon).
-![Freeze Panes options](./assets/freeze_panes_menu.png)
-* **New Window:** Opens a second view of the *same* file, allowing you to view two distant parts of a sheet simultaneously (e.g., Row 1 and Row 152).
+* **Freeze Panes:** Found in the *View* tab, this keeps specific rows (like headers) or columns static on the screen while you scroll through the rest of the data. A distinct line appears to indicate the frozen boundary.
+* **New Window:** Also in the *View* tab, this opens a second instance of the *same* file. This allows you to look at the top of a sheet in one window and the bottom in another, working on both simultaneously.
 
 ### The Name Box
-* **Location:** To the left of the formula bar.
-* **Function:** Type a cell reference to jump immediately to that location.
-* **Naming Cells:** Assigns a descriptive name (e.g., `units_in_stock`) to a specific cell. Names must be unique and cannot contain spaces (underscores are used).
+* **Location:** The small input box located to the immediate left of the Formula Bar.
+* **Function:** Typing a cell reference (like "Z100") here and pressing Enter jumps the cursor immediately to that location.
+* **Naming Cells:** You can use this box to assign a descriptive name (e.g., `Tax_Rate`) to a specific cell. Note that these names must be unique and use **underscores** instead of spaces.
 
 ### Keyboard Shortcuts
-* **Ctrl + Home:** Jumps to cell A1 (or the first active cell if panes are frozen).
-* **Ctrl + End:** Jumps to the last cell containing content.
-* **Shift + Ctrl + Home/End:** Selects the entire block of data from the cursor to the destination.
+* **Ctrl + Home:** Instantly jumps the cursor to cell **A1** (or the first active cell if panes are frozen).
+* **Ctrl + End:** Instantly jumps to the very last cell in the worksheet that contains data.
+* **Shift + Ctrl + Home/End:** Selects the entire block of data from your current position all the way to the start or end of the sheet.
 
 ---
 
@@ -104,14 +97,14 @@ It is crucial to understand the difference between these two data management too
 
 | Feature | Action | Impact on Data |
 | :--- | :--- | :--- |
-| **Sorting** | Reorders rows physically (e.g., A to Z, Oldest to Newest). | Changes the position of data. |
-| **Filtering** | Hides rows that don't match criteria. | Changes visibility, not position. |
+| **Sorting** | Reorders rows physically (e.g., A to Z, Oldest to Newest). | Changes the actual **position** of data in the file. |
+| **Filtering** | Hides rows that don't match criteria. | Changes **visibility**, but the data remains in its original position. |
 
 ### Sorting Details
-* **Multilevel Sort:** Used when a single condition isn't enough (e.g., Sort by Supplier, *then* by Date). Accessed via the Sort dialog box.
-* **Headers:** Ensure "My data has headers" is checked to prevent header rows from being sorted into the data.
+* **Multilevel Sort:** Used when a single condition isn't enough (e.g., Sort by Supplier, *then* by Date). This is accessed via the **Sort dialog box** rather than the quick-sort buttons.
+* **Headers:** Always ensure the "My data has headers" checkbox is selected to prevent your top row from being sorted alphabetically into the data below.
 * **Risk:** Once a file is saved after sorting, the original order cannot be restored via Undo.
 
 ### Filtering Details
-* **Indicators:** A funnel icon on a column header indicates a filter is active. Non-sequential row numbers (e.g., jumping from 10 to 112) indicate hidden filtered rows.
-* **Context Sensitive:** Excel offers different filter options based on data type (e.g., "Begins with" for text, "Equals" for numbers).
+* **Indicators:** A small **funnel icon** appears on the column header to show a filter is active. Additionally, the row numbers on the left will turn **blue** and become non-sequential (e.g., jumping from 10 to 112), indicating hidden rows.
+* **Context Sensitive:** Excel intelligently offers different filter options based on the data type (e.g., it offers "Begins with" for text columns, but "Greater than" for number columns).
