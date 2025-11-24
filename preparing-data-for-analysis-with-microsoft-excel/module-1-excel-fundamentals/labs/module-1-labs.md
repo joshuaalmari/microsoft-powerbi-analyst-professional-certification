@@ -1,11 +1,11 @@
-# 📋 Practical Labs & Exercises
+## 📋 Practical Labs & Exercises
 
-This module includes hands-on scenarios using data from **AdventureWorks**, a fictional multinational manufacturing company. Below are the key projects completed to demonstrate proficiency.
+The practical exercises in this module establish the foundation for efficient data management. The projects focus on **structuring raw data** for professional presentation and utilizing **sorting and filtering** tools to navigate and analyze large datasets effectively.
 
 ---
 
 ### 🧪 Lab 1: Adding Data to a Worksheet
-* **Scenario:** An executive based in the USA, required a financial report integrating external data from a PDF (`Exchange Rates.pdf`) into an existing Excel workbook (`Sample.xlsx`). The dataset required cleaning, international currency formatting, and structural reorganization for a presentation.
+* **Objective:** Transform a raw data source (PDF) into a structured, formatted Excel report for executive presentation. The task involved data cleaning, integration, and visual standardization.
 * **Files:**
     * [📂 View Lab Files](./lab-1-adding-data-to-a-worksheet/)
     * [📊 View Completed Workbook](./lab-1-adding-data-to-a-worksheet/Sample_Completed.xlsx)
@@ -31,7 +31,7 @@ This module includes hands-on scenarios using data from **AdventureWorks**, a fi
 ---
 
 ### 🧪 Lab 2: Sorting and Filtering Data
-* **Scenario:** The Analytics Team and Inventory Analyst required a two-part process on the product inventory file: first, reorganize the entire dataset for management review, and second, extract specific record counts via advanced filtering for analysis. All work was performed within a single workbook using dedicated sheets.
+* **Objective:** Process a large product inventory file to support decision-making. The project required organizing the full dataset for management review and extracting precise record counts for analysis.
 * **Files:**
     * [📂 View Lab Files](./lab-2-sorting-and-filtering-data/)
     * [📊 View Completed Workbook](./lab-2-sorting-and-filtering-data/Adventure%20Works%20Inventory%20Completed.xlsx)
@@ -53,9 +53,3 @@ This module includes hands-on scenarios using data from **AdventureWorks**, a fi
     * **Advanced Text Filtering:** Used the **Text Filter** submenu on the "Product Name" column to find all versions of **Mountain Bike Frames**.
     * **Stock Level Analysis:** Applied a second filter on the already-filtered mountain bike data to determine how many orders had a **Stock Level > 500**.
     * **Validation:** Verified the total number of extracted records using the count displayed on the Excel status bar after each filter operation.
-* **Query Setup:** Turned on the **Filter** feature (Data tab) to enable on-the-fly analysis.
-* **Categorical Filtering:** Isolated records to find the total number of listings for **Gear Components**.
-* **Compound Date Filtering:** Filtered records first by **Supplier (Z123)** and then adjusted the date filter to find counts for orders placed in **2023** and **2022** separately.
-* **Advanced Text Filtering:** Used the **Text Filter** submenu on the "Product Name" column to find all versions of **Mountain Bike Frames**.
-* **Stock Level Analysis:** Applied a second filter on the already-filtered mountain bike data to determine how many orders had a **Stock Level > 500**.
-* **Validation:** Verified the total number of extracted records using the count displayed on the Excel status bar after each filter operation.
