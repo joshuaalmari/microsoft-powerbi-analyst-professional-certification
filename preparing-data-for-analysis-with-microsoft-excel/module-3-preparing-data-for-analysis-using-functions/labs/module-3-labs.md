@@ -1,6 +1,6 @@
 ## 📋 Practical Labs & Exercises
 
-This module focuses on the **Data Preparation** phase of the analysis pipeline. The projects below demonstrate the transformation of raw, messy inputs into clean, structured datasets using advanced text manipulation, project timing logic, and conditional decision-making formulas.
+The projects below demonstrate the transformation of raw, messy inputs into clean, structured datasets using advanced text manipulation, project timing logic, and conditional decision-making formulas.
 
 ---
 
