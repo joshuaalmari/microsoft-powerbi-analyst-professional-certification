@@ -1,6 +1,6 @@
 ## 📋 Practical Labs & Exercises
 
-The projects below demonstrate the transformation of raw, messy inputs into clean, structured datasets using advanced text manipulation, project timing logic, and conditional decision-making formulas.
+The practical exercises in this module concentrate on the critical "pre-analysis" phase of data management. The projects involve hands-on **data cleansing** of legacy files, the creation of **dynamic project timelines**, and the construction of **logic-based pricing models** using advanced Excel functions.
 
 ---
 
