@@ -12,7 +12,8 @@ Before analysis can begin, data must be consistent. "Dirty" data (inconsistent f
 * **Inconsistent Entry:** Typing "Chicago" vs. "Chicago " (with a space) causes Excel to treat them as two different cities.
 * **Wrong Data Types:** Typing currency symbols manually (e.g., `$100`) instead of using number formatting turns the value into text, making it unusable for calculation.
 * **Structural Issues:** Placing multiple data points (City, State, Zip) in one column makes filtering impossible.
-* **Date Errors:** Entering dates as text (wrong separators) prevents time-based analysis.
+* **Date Errors:** Entering dates as text (using incorrect separators) prevents time-based analysis.
+* **Duplicate Data:** Rows entered multiple times (often via copy-paste errors) artificially inflate results and distort analysis.
 
 ### Cleaning Functions
 * **TRIM:** Removes all extra spaces from a text string, leaving only single spaces between words. It is essential for fixing invisible "leading" or "trailing" spaces that break VLOOKUPs or matching.
