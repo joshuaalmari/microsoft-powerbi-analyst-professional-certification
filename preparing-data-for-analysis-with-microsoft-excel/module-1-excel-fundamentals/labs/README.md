@@ -4,7 +4,7 @@ This module includes hands-on scenarios using data from **AdventureWorks**, a fi
 
 ---
 
-### 🧪 Lab 1: Data Entry, Formatting, and Worksheet Management
+### 🧪 Lab 1: Adding Data to a Worksheet
 * **Scenario:** An executive based in the USA, required a financial report integrating external data from a PDF (`Exchange Rates.pdf`) into an existing Excel workbook (`Sample.xlsx`). The dataset required cleaning, international currency formatting, and structural reorganization for a presentation.
 * **Files:**
     * [📂 View Lab Files](./lab-1-adding-data-to-a-worksheet/)
@@ -30,27 +30,29 @@ This module includes hands-on scenarios using data from **AdventureWorks**, a fi
 
 ---
 
-### 🧪 Lab 2: Data Organization (Standard and Multi-level Sorting)
-* **Scenario:** The Analytics Team needed to reorganize a large product inventory file (151 rows) to view data grouped by vendor and stock level, making it ready for management review.
+### 🧪 Lab 2: Sorting and Filtering Data
+* **Scenario:** The Analytics Team and Inventory Analyst required a two-part process on the product inventory file: first, reorganize the entire dataset for management review, and second, extract specific record counts via advanced filtering for analysis. All work was performed within a single workbook using dedicated sheets.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-2-sorting-data/)
-    * [📊 View Completed Workbook](./labs/lab-2-sorting-data/Inventory_Completed_Sort.xlsx)
+    * [📂 View Lab Files](./lab-2-sorting-and-filtering-data/)
+    * [📊 View Completed Workbook](./lab-2-sorting-and-filtering-data/Adventure%20Works%20Inventory_Completed.xlsx)
 
-#### Key Actions Performed:
-* **Preparation:** Added a **visual marker** (yellow fill) to a row to easily track how simple and complex sorting operations physically reorder the data.
-* **Alpha-Numeric Sorts:** Applied standard sorts to data columns (e.g., **Product Name**, **Supplier**) and performed a numeric sort on **Date Entered** (Oldest to Newest).
-* **Multi-Level Sort:** Performed a focused sort using the dialog box to group data by two criteria simultaneously: **Supplier** (Ascending) and **Units in Stock** (Descending).
-* **Process Note:** Demonstrated proficiency with keyboard shortcuts to access the Sort dialog and used **Undo (Ctrl+Z)** to reverse accidental sorts.
+#### 1. Data Reorganization (Sorting Focus)
+* **Objective:** Establish grouping logic (e.g., by vendor and stock level) on the initial data sheet.
+* **Actions Performed:**
+    * **Preparation:** Added a **visual marker** (yellow fill) to a row to easily track how simple and complex sorting operations physically reorder the data.
+    * **Alpha-Numeric Sorts:** Applied standard sorts to data columns (e.g., **Product Name**, **Supplier**) and performed a numeric sort on **Date Entered** (Oldest to Newest).
+    * **Multi-Level Sort:** Performed a focused sort using the dialog box to group data by two criteria simultaneously: **Supplier** (Ascending) and **Units in Stock** (Descending).
+    * **Process Note:** Demonstrated proficiency with keyboard shortcuts to access the Sort dialog and used **Undo (Ctrl+Z)** to reverse accidental sorts.
 
----
-
-### 🧪 Lab 3: Data Extraction (Filtering for Analysis)
-* **Scenario:** An Inventory Analyst submitted a list of complex questions requiring precise extraction of numerical counts (record quantities) from the inventory file for analysis.
-* **Files:**
-    * [📂 View Lab Files](./labs/lab-3-filtering-data/)
-    * [📊 View Completed Workbook](./labs/lab-3-filtering-data/Inventory_Completed_Filter.xlsx)
-
-#### Key Actions Performed:
+#### 2. Data Extraction and Analysis (Filtering Focus)
+* **Objective:** Extract precise record counts required to answer complex inventory questions from the analyst.
+* **Actions Performed:**
+    * **Query Setup:** Turned on the **Filter** feature (Data tab) to enable on-the-fly analysis.
+    * **Categorical Filtering:** Isolated records to find the total number of listings for **Gear Components**.
+    * **Compound Date Filtering:** Filtered records first by **Supplier (Z123)** and then adjusted the date filter to find counts for orders placed in **2023** and **2022** separately.
+    * **Advanced Text Filtering:** Used the **Text Filter** submenu on the "Product Name" column to find all versions of **Mountain Bike Frames**.
+    * **Stock Level Analysis:** Applied a second filter on the already-filtered mountain bike data to determine how many orders had a **Stock Level > 500**.
+    * **Validation:** Verified the total number of extracted records using the count displayed on the Excel status bar after each filter operation.
 * **Query Setup:** Turned on the **Filter** feature (Data tab) to enable on-the-fly analysis.
 * **Categorical Filtering:** Isolated records to find the total number of listings for **Gear Components**.
 * **Compound Date Filtering:** Filtered records first by **Supplier (Z123)** and then adjusted the date filter to find counts for orders placed in **2023** and **2022** separately.
