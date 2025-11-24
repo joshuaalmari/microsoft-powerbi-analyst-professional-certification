@@ -19,7 +19,7 @@ The practical exercises in this module concentrate on the critical "pre-analysis
 
 ---
 
-### 🧪 Lab 2: Calculating Working Days
+### 🧪 Lab 2: Calculating the Number of Working Days Remaining in the Year
 * **Objective:** Build a dynamic project schedule for a national advertising campaign to track milestones, launch windows, and resource availability.
 * **Files:**
     * [📂 View Lab Files](./lab-2-calculating-the-number-of-working-days-remaining-in-the-year/)
@@ -33,11 +33,11 @@ The practical exercises in this module concentrate on the critical "pre-analysis
 
 ---
 
-### 🧪 Lab 3: Adding Data Using IFS
+### 🧪 Lab 3: Adding a data column using the IFS function
 * **Objective:** Create an automated pricing tool that calculates discounts and shipping logistics based on variable order criteria.
 * **Files:**
-    * [📂 View Lab Files](./lab-3-adding-data-using-ifs/)
-    * [📊 View Completed Workbook](./lab-3-adding-data-using-ifs/Contoso%20Bikes%20Completed.xlsx)
+    * [📂 View Lab Files](./lab-3-adding-a-data-column-using-the-IFS-function/)
+    * [📊 View Completed Workbook](./lab-3-adding-a-data-column-using-the-IFS-function/Contoso%20Bikes%20Completed.xlsx)
 
 #### Key Actions Performed:
 * **Conditional Logic (`IF`):** Built a threshold rule to automatically apply a **10% discount** only if the order subtotal exceeds $10,000.
