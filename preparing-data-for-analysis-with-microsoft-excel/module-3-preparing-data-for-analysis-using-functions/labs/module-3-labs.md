@@ -1,6 +1,6 @@
 ## 📋 Practical Labs & Exercises
 
-This module includes hands-on scenarios using data from **AdventureWorks**, a fictional multinational manufacturing company. Below are the key projects completed to demonstrate proficiency.
+This module focuses on the **Data Preparation** phase of the analysis pipeline. The projects below demonstrate the transformation of raw, messy inputs into clean, structured datasets using advanced text manipulation, project timing logic, and conditional decision-making formulas.
 
 ---
 
