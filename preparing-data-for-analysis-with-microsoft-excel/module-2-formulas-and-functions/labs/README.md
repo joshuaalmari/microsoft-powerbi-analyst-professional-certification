@@ -2,6 +2,8 @@
 
 This module includes hands-on scenarios using data from **AdventureWorks**, a fictional multinational manufacturing company. Below are the key projects completed to demonstrate proficiency.
 
+---
+
 ### 🧪 Lab 1: Calculating Profit and Margin
 * **Scenario:** Aimee, an executive at AdventureWorks, required a detailed financial model to present at a management review. The goal was to calculate wholesale costs, shipping fees, retail pricing with markup, and final profit margins for a specific division's sales data.
 * **Files:**
