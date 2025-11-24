@@ -22,8 +22,8 @@ The practical exercises in this module concentrate on the critical "pre-analysis
 ### 🧪 Lab 2: Calculating Working Days
 * **Objective:** Build a dynamic project schedule for a national advertising campaign to track milestones, launch windows, and resource availability.
 * **Files:**
-    * [📂 View Lab Files](./lab-2-calculating-working-days/)
-    * [📊 View Completed Workbook](./lab-2-calculating-working-days/Advertising%20Campaign%20USA%20Dates%20Completed.xlsx)
+    * [📂 View Lab Files](./lab-2-calculating-the-number-of-working-days-remaining-in-the-year/)
+    * [📊 View Completed Workbook](./lab-2-calculating-the-number-of-working-days-remaining-in-the-year/Advertising%20Campaign%20USA%20Dates%20Completed.xlsx)
 
 #### Key Actions Performed:
 * **Workforce Planning:** Calculated accurate resource availability using `NETWORKDAYS`, which automatically excludes weekends and a custom list of **Federal Holidays** from the timeline.
