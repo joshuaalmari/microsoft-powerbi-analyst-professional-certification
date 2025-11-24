@@ -22,7 +22,7 @@ This module focuses on getting hands-on with the Power BI interface. The project
 * **Objective:** Transform a raw sales dataset (`.csv`) into an interactive dashboard. The task required importing data, building multiple chart types to display trends, and adding interactive controls for user self-service.
 * **Files:**
     * [📂 View Lab Files](./lab-2-generate-a-visualization/)
-    * [📊 View Completed Project](./lab-2-generate-a-visualization/AdventureWorks%20Sales%20Dashboard.pbix)
+    * [📊 View Completed Project](./lab-2-generate-a-visualization/Generate%20a%20Visualization.pbix)
 
 #### Key Visuals Built:
 * **Interactive Slicers:** Created on-canvas filters for "Product Category" and "Payment Method," enabling users to slice the entire report by specific segments instantly.
