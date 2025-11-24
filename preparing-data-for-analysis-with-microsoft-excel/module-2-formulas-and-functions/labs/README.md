@@ -1,10 +1,8 @@
----
-
 ## 📂 Practical Labs & Exercises
 
 This module includes hands-on scenarios using data from **AdventureWorks**, a fictional multinational manufacturing company. Below are the key projects completed to demonstrate proficiency.
 
-### 🧪 Lab 1: Financial Modeling (Profit, Markup, and Margin)
+### 🧪 Lab 1: Calculating Profit and Margin
 * **Scenario:** Aimee, an executive at AdventureWorks, required a detailed financial model to present at a management review. The goal was to calculate wholesale costs, shipping fees, retail pricing with markup, and final profit margins for a specific division's sales data.
 * **Files:**
     * [📂 View Lab Files](./labs/lab-1-calculating-profit-and-margin/)
@@ -27,7 +25,7 @@ This module includes hands-on scenarios using data from **AdventureWorks**, a fi
 
 ---
 
-### 🧪 Lab 2: Monthly Sales Reporting (Core Functions)
+### 🧪 Lab 2: Preparing a Monthly Sales Report
 * **Scenario:** Lucas needed to present a monthly performance review for the "A2Mountain Bike Frame" product line. The task involved generating aggregate metrics (Total Revenue, Units Sold) and identifying performance extremes (Best/Worst sales days) from raw daily data.
 * **Files:**
     * [📂 View Lab Files](./labs/lab-2-preparing-a-monthly-sales-report/)
