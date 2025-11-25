@@ -4,7 +4,7 @@ The exercises in this module focus on the critical "pre-analysis" phase: evaluat
 
 ---
 
-### 🧪 Lab 1: Dataset Evaluation
+### 🧪 Lab 1: Dataset
 * **Objective:** Assess a raw product inventory file (`Adventure Works Inventory.xlsx`) to determine if it contains the necessary data points to track supplier price increases over time.
 * **Files:**
     * [📂 View Lab Files](./labs/lab-1-dataset-evaluation/)
