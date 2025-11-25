@@ -19,8 +19,8 @@ The exercises in this module focus on the critical "pre-analysis" phase: evaluat
 ### 🧪 Lab 2: Evaluating Data for Transformation
 * **Objective:** Perform a comprehensive data quality audit and cleanup on three distinct datasets (Sales, Inventory, Customer Feedback) using Excel to prepare them for ingestion into Power BI.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-2-evaluating-data-for-transformation/)
-    * [📊 View Cleaned Datasets](./labs/lab-2-evaluating-data-for-transformation/)
+    * [📂 View Lab Files](./lab-2-evaluating-data-for-transformation/raw-files)
+    * [📊 View Cleaned Datasets](./lab-2-evaluating-data-for-transformation/completed-files)
 
 #### Key Actions Performed:
 * **Sales Data Cleaning:**
