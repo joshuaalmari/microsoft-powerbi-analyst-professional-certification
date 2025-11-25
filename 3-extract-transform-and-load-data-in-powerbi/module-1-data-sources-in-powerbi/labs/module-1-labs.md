@@ -8,7 +8,7 @@ The labs in this module focus on establishing the fundamental data pipeline. The
 * **Objective:** Consolidate disparate sales reports from multiple regional managers into a single analytical dataset. The task involves identifying a flat file, preparing the data structure, and establishing a stable connection in Power BI Desktop.
 * **Files:**
     * [📂 View Lab Files](./lab-1-setting-up-excel-data-source/)
-    * [📊 View Completed Report](./lab-1-setting-up-excel-data-source/Consolidated_Sales_Report.pbix)
+    * [📊 View Completed Report](./lab-1-setting-up-excel-data-source/Importing_Excel_Data_Source.pbix)
 
 #### Key Actions Performed:
 * **Data Preparation:**
