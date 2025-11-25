@@ -8,7 +8,7 @@ This module concludes with a comprehensive final project that simulates the earl
 * **Objective:** Lay the groundwork for a high-stakes product launch analysis. The task involves identifying key stakeholders, evaluating the schema of a raw sales dataset, and designing a data cleaning strategy to ensure accuracy for strategic decision-making.
 * **Files:**
     * [📂 View Project Files](./final-project/)
-    * [📊 View Cleaned Dataset](./final-project/Sales_Cleaned.xlsx)
+    * [📊 View Cleaned Dataset](./final-project/Sales%20Cleaned.xlsx)
 
 #### Key Actions Performed:
 * **Stakeholder Analysis:**
