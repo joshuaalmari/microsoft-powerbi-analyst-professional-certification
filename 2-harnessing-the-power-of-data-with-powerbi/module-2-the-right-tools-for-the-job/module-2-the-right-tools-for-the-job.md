@@ -1,5 +1,4 @@
-# 🛠️ Module 2: The Right Tools for the Job (Data Acquisition & Transformation)
-
+# 🛠️ Module 2: The Right Tools for the Job
 This module focuses on the critical backend processes of data analysis: identifying the right data, bringing it into the system (Ingestion), and cleaning it for analysis (Transformation). It introduces the **ETL** framework and **Microsoft Power Query** as the primary tool for shaping data.
 
 ---
