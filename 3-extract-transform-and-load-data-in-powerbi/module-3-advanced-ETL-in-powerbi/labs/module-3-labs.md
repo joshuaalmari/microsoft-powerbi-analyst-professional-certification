@@ -8,7 +8,7 @@ This module focuses on advanced data validation and performance optimization. Th
 * **Objective:** Perform a statistical audit on a newly acquired product dataset (`Other Company Products.xlsx`) to validate data quality before integration. The goal was to identify distribution patterns and detect outliers.
 * **Files:**
     * [📂 View Lab Files](./lab-1-profiling-a-dataset/)
-    * [📊 View Profiled Report](./lab-1-profiling-a-dataset/Product_Quality_Audit.pbix)
+    * [📊 View Profiled Report](./lab-1-profiling-a-dataset/Profiling%20a%20Dataset.pbix)
 
 #### Key Actions Performed:
 * **Column Quality Analysis:** Used the "Column Quality" view to instantly quantify the percentage of **Error** and **Empty** values in the `ProductKey` column.
