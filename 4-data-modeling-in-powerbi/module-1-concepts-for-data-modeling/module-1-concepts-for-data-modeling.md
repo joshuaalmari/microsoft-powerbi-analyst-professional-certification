@@ -4,20 +4,51 @@ This module initiates **Course 4: Data Modeling in Power BI**. It shifts focus f
 
 ---
 
-## 📐 The Core Building Blocks: Tables & Views
+## 📐 The Core Building Blocks: Views & Architecture
 
-Power BI offers specific views to manage the data structure. Understanding the difference between them is critical for modeling.
+Power BI offers specific views to manage the data structure. Understanding the distinction between them is critical for efficiency.
 
-### The Model View (Architecture)
-The workspace for architecting relationships.
-* **Diagram View:** Visualizes tables as boxes and relationships as lines.
-* **Properties Pane:** Allows configuration of technical settings (synonyms, row labels, hiding tables) without changing the data itself.
-* **Relationship Management:** Where cardinality and filter directions are defined.
+### 1. The Model View (Architecture)
+* **Purpose:** The structural blueprint of your data. This is where you define *how tables relate* to one another .
+* **Key UI Elements:**
+    * **Diagram View:** Visualizes tables as boxes and relationships as connection lines .
+    * **Properties Pane:** The command center for configuration. Allows you to edit settings for multiple objects at once (e.g., select 5 columns and hide them all simultaneously) .
 
-### The Data View (Inspection)
-Unlike the Report view, this allows analysts to inspect the raw data rows after they have been loaded.
-* **Data Grid:** Displays the actual records. Useful for sorting and verifying data quality before modeling.
-* **Column Tools:** A contextual ribbon for managing data types, formatting (Currency/Percentage), and sorting logic (e.g., "Sort By Column").
+### 2. The Table View (Inspection)
+* *Formerly "Data View".*
+* **Purpose:** To inspect the actual raw data rows after loading. You cannot see relationships here, but you can see the data values to verify accuracy .
+* **Key UI Elements:**
+    * **Data Grid:** A spreadsheet-like view of the data .
+    * **Contextual Ribbons:** The **Table Tools** and **Column Tools** tabs appear at the top only when you select data in this view .
+
+---
+
+## ⚙️ Configuration: Where to Do What?
+
+Many tasks can be done in both views, but some are specific to one.
+
+### 🔹 Unique to Model View (Properties Pane)
+These advanced architectural settings are **only** available here:
+* **Synonyms:** Defining alternate names for Q&A (e.g., letting users type "Revenue" to find "Sales Amount") .
+* **Row Label:** Defining which column represents the "row" (e.g., telling Power BI that the "Name" column identifies the row, not the "ID") .
+* **Key Column:** Designating a unique identifier for the table .
+* **Display Folder:** Grouping measures and columns into folders for a cleaner Report View.
+
+### 🔹 Unique to Table View (Data Grid)
+* **Visual Inspection:** Sorting and filtering the *raw data* to check for errors (e.g., "Did my 'Remove Duplicates' step actually work?") .
+* **Copying Data:** You can right-click a cell or table to copy raw values to the clipboard.
+
+### 🔸 Shared Capabilities (Do in Both)
+These actions can be performed in the **Column Tools** ribbon (Table View) OR the **Properties Pane** (Model View).
+
+| Feature | Description |
+| :--- | :--- |
+| **Formatting** | Setting the format (Currency, Percentage), decimal places, and symbols ($ vs €) . |
+| **Data Type** | defining if a column is Text, Whole Number, Decimal, or Date/Time . |
+| **Sort By Column** | A critical feature. Allows you to sort one column by another (e.g., sorting "Month Name" by "Month Number" so April follows March, not August) . |
+| **Data Category** | Tagging a column (e.g., "City", "Web URL", "Image URL") so Power BI knows how to render it . |
+| **Summarization** | Defining the default math behavior (Sum, Average, or **"Don't Summarize"** for ID columns) . |
+| **Visibility** | Hiding tables or columns (using the **Eye Icon** or "Is Hidden" toggle) to declutter the Report View . |
 
 ---
 
@@ -26,20 +57,20 @@ Unlike the Report view, this allows analysts to inspect the raw data rows after 
 Choosing the right schema is the most important architectural decision in Power BI.
 
 ### 1. Flat Schema
-* **Structure:** All data is stored in a single, massive table (similar to a wide Excel spreadsheet).
-* **Pros:** Simple to understand; easy for very small datasets.
-* **Cons:** Massive data redundancy; slow performance at scale; difficult to maintain or update.
+* **Structure:** All data is stored in a single, massive table.
+* **Pros:** Simple to understand; easy for very small datasets .
+* **Cons:** Massive data redundancy; slow performance at scale; difficult to maintain .
 
 ### 2. Star Schema (The Gold Standard)
 * **Structure:** A central **Fact Table** surrounded by **Dimension Tables**.
     * **Fact Table:** Contains quantitative metrics (Sales Amount, Quantity) and foreign keys. Long and narrow.
-    * **Dimension Table:** Contains descriptive attributes (Product Name, City, Date). Short and wide.
-* **Pros:** Optimized for query performance; reduces redundancy; intuitive for report users.
+    * **Dimension Table:** Contains descriptive attributes (Product Name, City, Date). Short and wide .
+* **Pros:** Optimized for query performance; reduces redundancy; intuitive for report users .
 
 ### 3. Snowflake Schema
-* **Structure:** An extension of the Star Schema where Dimension tables are normalized into multiple related tables (e.g., Product table linked to Subcategory, linked to Category).
-* **Pros:** Maximizes data integrity and eliminates all redundancy.
-* **Cons:** Increases complexity; query performance can decrease due to the extra joins required to retrieve basic attributes.
+* **Structure:** An extension of the Star Schema where Dimension tables are normalized into multiple related tables (e.g., Product table linked to Subcategory, linked to Category) .
+* **Pros:** Maximizes data integrity and eliminates all redundancy .
+* **Cons:** Increases complexity; query performance can decrease due to the extra joins required to retrieve basic attributes .
 
 ---
 
@@ -48,47 +79,22 @@ Choosing the right schema is the most important architectural decision in Power 
 Relationships are the "wires" that allow filters to flow from one table to another.
 
 ### Cardinality Types
-* **One-to-Many (1:*):** The standard relationship. A unique record in a Dimension (One) filters many records in a Fact Table (Many).
-* **One-to-One (1:1):** Rare. Usually indicates tables should be merged, unless splitting data for security or domain grouping.
-* **Many-to-Many (*:*):** Multiple records in Table A match multiple records in Table B. Often requires a "Bridge Table" to resolve ambiguity.
+* **One-to-Many (1:*):** The standard relationship. A unique record in a Dimension (One) filters many records in a Fact Table (Many) .
+* **One-to-One (1:1):** Rare. Usually indicates tables should be merged or are split for security reasons .
+* **Many-to-Many (*:*):** Multiple records in Table A match multiple records in Table B. *Risk:* Introduces ambiguity; use with caution .
 
 ### Cross-Filter Direction
-* **Single (Default):** Filters flow from the "One" side to the "Many" side. This ensures predictable reporting path.
-* **Both (Bi-Directional):** Filters flow in both directions. *Risk:* Can cause performance degradation and ambiguous filter paths.
-
-### Granularity
-* **Definition:** The level of detail in the data (e.g., Transaction-level vs. Daily Summary).
-* **Impact:** High granularity allows deep analysis but increases file size. Low granularity (summary) is faster but limits drill-down.
-* **Alignment:** Relationships can only be built between tables with matching granularity.
+* **Single (Default):** Filters flow from the "One" side to the "Many" side. This ensures a predictable reporting path .
+* **Both (Bi-Directional):** Filters flow in both directions. *Risk:* Can cause performance degradation and ambiguous filter paths .
 
 ---
 
 ## 🛠️ Data Engineering & Optimization
 
 ### Normalization vs. Denormalization
-* **Normalization:** The process of splitting data into multiple related tables to minimize redundancy (Snowflake approach). Improves data integrity.
-* **Denormalization:** The process of combining tables to simplify the model (Star/Flat approach). Improves read performance.
+* **Normalization:** Splitting data into multiple related tables (Snowflake approach). Improves data integrity .
+* **Denormalization:** Combining tables to simplify the model (Flat/Star approach). Improves read performance .
 
-### Resolving Common Challenges
-* **Inferior Performance:** Often caused by complex calculations on flat schemas. *Solution:* Normalize columns into dimension tables.
-* **Inconsistent Data:** caused by duplicate entries. *Solution:* Enforce unique keys in dimension tables.
-* **Limited Scalability:** Flat files cannot grow with the business. *Solution:* Transition to a Star Schema.
-
----
-
-## ⚙️ Object Configuration (Properties Pane)
-
-The **Model View** allows for deep configuration of how tables and columns behave in the report.
-
-### Table Properties
-* **Name & Description:** Critical for documentation in shared models.
-* **Row Label:** Defines which column represents the row when the table is used in Q&A.
-* **Is Hidden:** The **Eye Icon** hides technical tables (like calculation tables) from the Report View to reduce clutter for end-users.
-
-### Column Properties
-* **Data Category:** Tags a column so Power BI knows how to treat it (e.g., tagging a text column as "City" or "Web URL").
-* **Summarization:** Defines the default math (Sum, Average, Don't Summarize). *Tip: Set ID columns to "Don't Summarize" so Power BI doesn't accidentally add them up.*
-* **Sort By Column:** A critical feature. Allows you to sort one column by another (e.g., Sorting the text "Month Name" by a hidden "Month Number" column so April comes after March, not August).
-* **Formatting:** Controlling decimal places, currency symbols, and date formats globally for the model.
-
----
+### Granularity
+* **Definition:** The level of detail in the data (e.g., Transaction-level vs. Daily Summary) .
+* **Impact:** High granularity allows deep analysis but increases file size. Relationships can only be built between tables with matching granularity .
