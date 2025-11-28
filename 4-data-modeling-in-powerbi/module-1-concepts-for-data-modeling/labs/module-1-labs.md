@@ -8,8 +8,8 @@ The exercises in this module guide the learner through the evolution of data mod
 ### 🧪 Lab 1: Configuring a Flat Schema
 * **Objective:** Establish a baseline data model by importing a single, consolidated dataset into a simple Flat Schema. The goal was to perform initial property configuration to ensure the single-table model was ready for basic analysis.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-1-basic-flat-schema/)
-    * [📊 View Flat Model](./labs/lab-1-basic-flat-schema/Flat_Schema_Single_Source.pbix)
+    * [📂 View Lab Files](./lab-1-configuring-a-flat-schema/)
+    * [📊 View Flat Model](./lab-1-configuring-a-flat-schema/Configuring%20a%20Flat%20Schema.pbix)
 
 #### Key Actions Performed:
 * **Data Connection:** Connected Power BI Desktop to a single Excel worksheet containing consolidated product and order data.
