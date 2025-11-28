@@ -24,8 +24,8 @@ The exercises in this module guide the learner through the evolution of data mod
 ### 🧪 Lab 2: Configure a Flat Schema with Multiple Sources
 * **Objective:** Create a unified Flat Schema by manually integrating two separate data tables ("Sales" and "Salespersons"). The goal was to denormalize the data into a single table to simplify the model for a specific reporting need.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-2-multi-source-flat-schema/)
-    * [📊 View Merged Model](./labs/lab-2-multi-source-flat-schema/Flat_Schema_Multi_Source.pbix)
+    * [📂 View Lab Files](./lab-2-configure-a-flat-schema-with-multiple-sources/)
+    * [📊 View Merged Model](./lab-2-configure-a-flat-schema-with-multiple-sources/Configure%20a%20Flat%20Schema%20with%20Multiple%20Sources.pbix)
 
 #### Key Actions Performed:
 * **Data Ingestion:** Loaded two distinct tables from the `AdventureWorksDataset` Excel workbook.
