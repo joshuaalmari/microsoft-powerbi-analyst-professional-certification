@@ -40,8 +40,8 @@ The exercises in this module guide the learner through the evolution of data mod
 ### 🧪 Lab 3: Configuring a Star Schema
 * **Objective:** Re-architect the data strategy by implementing a **Star Schema**. The task involved moving from a single table to a relational model with distinct Fact and Dimension tables to improve query performance.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-3-star-schema/)
-    * [📊 View Star Model](./labs/lab-3-star-schema/Star_Schema_Configured.pbix)
+    * [📂 View Lab Files](./lab-3-configuring-a-star-schema/)
+    * [📊 View Star Model](./lab-3-configuring-a-star-schema/Configuring%20a%20Star%20Schema.pbix)
 
 #### Key Actions Performed:
 * **Model Setup:** Disabled **"Auto-detect new relationships"** in Power BI Options to maintain full manual control over the schema design.
