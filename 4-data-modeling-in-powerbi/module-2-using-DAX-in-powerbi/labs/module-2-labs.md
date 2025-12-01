@@ -59,8 +59,8 @@ The exercises in this module focus on replacing manual Excel calculations with d
 ### 🧪 Lab 5: Using time intelligence to compare to previous year
 * **Objective:** Analyze sales growth by creating explicit year-over-year (YoY) comparison measures. The goal was to identify monthly and annual sales trends for strategic planning.
 * **Files:**
-    * [📂 View Lab Files](./labs/exercise-using-time-intelligence-to-compare-to-previous-year/)
-    * [📊 View Model](./labs/exercise-using-time-intelligence-to-compare-to-previous-year/YoY_Analysis.pbix)
+    * [📂 View Lab Files](./lab-5-using-time-intelligence-to-compare-to-previous-year/)
+    * [📊 View Model](./lab-5-using-time-intelligence-to-compare-to-previous-year/Adventure%20Works%20-%20Final.pbix)
 
 #### Key Formulas Constructed:
 * **Prior Year Sales:** Created a measure (`RevenuePY`) using `CALCULATE` combined with `SAMEPERIODLASTYEAR` to shift the filter context back 12 months.
