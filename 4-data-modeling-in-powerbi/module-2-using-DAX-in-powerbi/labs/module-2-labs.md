@@ -30,11 +30,25 @@ The exercises in this module focus on replacing manual Excel calculations with d
 
 ---
 
-### 🧪 Lab 3: Adding a role-playing dimension
+### 🧪 Lab 3: Using the CALCULATE function
+* **Objective:** Perform granular analysis by creating measures that override the default filter context. The goal was to isolate specific sales segments (Non-US regions, specific product types, and employee roles).
+* **Files:**
+    * [📂 View Lab Files](./using-the-CALCULATE-function/)
+    * [📊 View Model](./using-the-CALCULATE-function/Using%20th%20CALCULATE%20Function%20-%20Final.pbix)
+
+#### Key Actions Performed:
+* **Filter Context Modification:** Used the `CALCULATE` function to modify the `Total Revenue` measure.
+* **Exclusion Logic:** Created a "Non-US Sales" measure using `FILTER` and the `<>` (not equal) operator to exclude United States data.
+* **Multiple Filters:** Built a specific "Black Road Bikes" measure by applying two simultaneous filters (`Subcategory="Road Bikes"` AND `Color="Black"`).
+* **Text Searching:** Used `CONTAINSSTRING` inside a filter to calculate sales specifically for employees with "Manager" in their job title.
+
+---
+
+### 🧪 Lab 4: Adding a role-playing dimension
 * **Objective:** Configure the data model to analyze sales based on **Shipping Date** (inactive relationship) rather than the default Order Date, without creating a redundant date table.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-3-adding-a-role-playing-dimension/)
-    * [📊 View Model](./labs/lab-3-adding-a-role-playing-dimension/Role_Playing_Model.pbix)
+    * [📂 View Lab Files](./labs/exercise-adding-a-role-playing-dimension/)
+    * [📊 View Model](./labs/exercise-adding-a-role-playing-dimension/Role_Playing_Model.pbix)
 
 #### Key Actions Performed:
 * **Relationship Configuration:** Established two relationships between the `Sales` table and `Date` dimension: one **Active** (Order Date) and one **Inactive** (Shipping Date).
@@ -42,11 +56,11 @@ The exercises in this module focus on replacing manual Excel calculations with d
 
 ---
 
-### 🧪 Lab 4: Using time intelligence to compare to previous year
+### 🧪 Lab 5: Using time intelligence to compare to previous year
 * **Objective:** Analyze sales growth by creating explicit year-over-year (YoY) comparison measures. The goal was to identify monthly and annual sales trends for strategic planning.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-4-using-time-intelligence-to-compare-to-previous-year/)
-    * [📊 View Model](./labs/lab-4-using-time-intelligence-to-compare-to-previous-year/YoY_Analysis.pbix)
+    * [📂 View Lab Files](./labs/exercise-using-time-intelligence-to-compare-to-previous-year/)
+    * [📊 View Model](./labs/exercise-using-time-intelligence-to-compare-to-previous-year/YoY_Analysis.pbix)
 
 #### Key Formulas Constructed:
 * **Prior Year Sales:** Created a measure (`RevenuePY`) using `CALCULATE` combined with `SAMEPERIODLASTYEAR` to shift the filter context back 12 months.
@@ -55,11 +69,11 @@ The exercises in this module focus on replacing manual Excel calculations with d
 
 ---
 
-### 🧪 Lab 5: Set up a common date table
+### 🧪 Lab 6: Set up a common date table
 * **Objective:** Create and configure a mandatory **Date Dimension Table** using DAX to ensure all time intelligence functions operate correctly.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-5-set-up-a-common-date-table/)
-    * [📊 View Model](./labs/lab-5-set-up-a-common-date-table/Date_Table_Setup.pbix)
+    * [📂 View Lab Files](./labs/activity-set-up-a-common-date-table/)
+    * [📊 View Model](./labs/activity-set-up-a-common-date-table/Date_Table_Setup.pbix)
 
 #### Key Actions Performed:
 * **Table Creation:** Used the `CALENDAR` function to generate a dynamic single-column table with a contiguous set of dates covering the required sales history.
