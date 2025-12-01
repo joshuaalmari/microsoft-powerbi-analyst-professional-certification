@@ -20,8 +20,8 @@ The exercises in this module focus on replacing manual Excel calculations with d
 ### 🧪 Lab 2: Adding a measure
 * **Objective:** Create dynamic aggregation measures using both the "Quick Measure" feature (for speed) and custom DAX syntax (for precision).
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-2-adding-a-measure/)
-    * [📊 View Model](./labs/lab-2-adding-a-measure/Sales_Revenue_Measures.pbix)
+    * [📂 View Lab Files](./lab-2-adding-a-measure/)
+    * [📊 View Model](./lab-2-adding-a-measure/Adding%20a%20Measure%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Quick Measure:** Utilized the built-in tool to generate a **"Running Total in Year"** calculation without manually writing complex code.
