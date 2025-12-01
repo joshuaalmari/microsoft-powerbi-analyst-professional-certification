@@ -34,7 +34,7 @@ The exercises in this module focus on replacing manual Excel calculations with d
 * **Objective:** Perform granular analysis by creating measures that override the default filter context. The goal was to isolate specific sales segments (Non-US regions, specific product types, and employee roles).
 * **Files:**
     * [📂 View Lab Files](./lab-3-using-the-CALCULATE-function/)
-    * [📊 View Model](./lab-3-using-the-CALCULATE-function/Using%20th%20CALCULATE%20Function%20-%20Final.pbix)
+    * [📊 View Model](./lab-3-using-the-CALCULATE-function/Using%20the%20CALCULATE%20Function%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Filter Context Modification:** Used the `CALCULATE` function to modify the `Total Revenue` measure.
