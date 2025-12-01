@@ -7,8 +7,8 @@ The exercises in this module focus on replacing manual Excel calculations with d
 ### 🧪 Lab 1: Adding a calculated table and column
 * **Objective:** Enhance the data model by creating a calculated table (a clone of existing data with new columns) and calculated columns (new fields) to enrich the dataset without altering the original source.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-1-adding-a-calculated-table-and-column/)
-    * [📊 View Model](./labs/lab-1-adding-a-calculated-table-and-column/Calculated_Objects.pbix)
+    * [📂 View Lab Files](./lab-1-adding-a-calculated-table-and-column/)
+    * [📊 View Model](./labs/lab-1-adding-a-calculated-table-and-column/Adding%20a%20Calculated%20Table%20and%20Column.pbix)
 
 #### Key Actions Performed:
 * **Data Integrity:** Removed duplicate `SalesOrderNumber` values from the Fact table to ensure clean relationships.
