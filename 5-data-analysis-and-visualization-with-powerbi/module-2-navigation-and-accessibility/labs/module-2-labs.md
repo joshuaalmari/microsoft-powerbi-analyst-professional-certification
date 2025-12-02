@@ -33,8 +33,8 @@ The exercises in this module focus on enhancing User Experience (UX) through acc
 ### 🧪 Lab 3: Sorting and filtering a report
 * **Objective:** Optimize a sales report for clarity by strictly controlling how data is ordered and what data is visible to the end-user.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-3-sorting-and-filtering-a-report/)
-    * [📊 View Optimized Report](./labs/lab-3-sorting-and-filtering-a-report/Sorting_Filtering_Configured.pbix)
+    * [📂 View Lab Files](./lab-3-sorting-and-filtering-a-report/)
+    * [📊 View Sorted & Filtered Report](./lab-3-sorting-and-filtering-a-report/Sorting-and-filtering-a-report%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Sort Logic:** Corrected the sort order on time-series visuals to display data **Chronologically** (Jan, Feb, Mar) rather than by magnitude (highest sales first), ensuring linear trends were readable.
