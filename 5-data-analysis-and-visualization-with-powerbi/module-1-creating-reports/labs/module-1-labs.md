@@ -1,6 +1,6 @@
-### 📋 Practical Labs & Exercises
+## 📋 Practical Labs & Exercises
 
-This module's exercises focus on the practical application of data visualization. The projects involve building interactive sales reports, designing comprehensive dashboards, and configuring advanced specialist charts to uncover deeper insights.
+The exercises in this module focus on the end-to-end creation of business reports. The projects progress from building basic sales summaries to enhancing visual storytelling with brand themes and implementing performance indicators for strategic monitoring.
 
 ---
 
@@ -17,42 +17,39 @@ This module's exercises focus on the practical application of data visualization
 
 ---
 
-### 🧪 Lab 2: Create a report with multiple visualizations
-* **Objective:** Construct a comprehensive executive dashboard to answer complex questions regarding marketing ROI and regional performance. The task required using a diverse set of visuals to communicate specific KPIs and correlations.
+### 🧪 Lab 2: Using bars, columns, and lines
+* **Objective:** Refine the visual narrative by selecting the most appropriate chart types for specific data stories. The task involved replacing generic visuals with specialized Bar, Column, and Line charts to improve readability and trend analysis.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-2-create-a-report-with-multiple-visualizations/)
-    * [📊 View Comprehensive Report](./labs/lab-2-create-a-report-with-multiple-visualizations/AdventureWorks_Comprehensive_Report.pbix)
-
-#### Key Visuals Built:
-* **KPI Cards:** Configured **Card** visuals to display headline metrics: *Total Sales*, *Average Sales*, and *Total Number of Orders*.
-* **Marketing Analysis:** Designed a **Clustered Bar Chart** to compare *Total Marketing Spend* across different *Marketing Channels*.
-* **Regional Performance:**
-    * Built a **Clustered Column Chart** to rank *Total Sales* by *Product Region*.
-    * Created a **Donut Chart** to visualize the percentage share of sales per region.
-* **Correlation & Detail:** Implemented a **Matrix Visual** to analyze the relationship between *Sales* and *Advertising Campaigns* across different regions, allowing for granular drill-down into campaign effectiveness.
-
----
-
-### 🧪 Lab 3: Creating specialist visualizations
-* **Objective:** Visualize complex data relationships that standard charts cannot handle. The task involved building advanced charts to analyze rankings, process flows, and correlations.
-* **Files:**
-    * [📂 View Lab Files](./labs/lab-3-creating-specialist-visualizations/)
-    * [📊 View Advanced Visuals](./labs/lab-3-creating-specialist-visualizations/Specialist_Charts.pbix)
-
-#### Key Visuals Built:
-* **Ranking Analysis:** Created a **Ribbon Chart** to track *Sales Ranking* changes between regions over time, highlighting when a region moved from 2nd to 1st place.
-* **Process Flow:** Built a **Funnel Chart** to visualize the sales pipeline, tracking the conversion drop-off from "Lead" to "Finalized Sale."
-* **Correlation Analysis:** Designed a **Scatter Chart** to plot *Marketing Spend* (X) vs. *Revenue* (Y), effectively identifying outlier campaigns that had high spend but low return.
-
----
-
-### 🧪 Lab 4: Pinning visualizations
-* **Objective:** Create a centralized monitoring dashboard by aggregating key visuals from different reports. The goal was to set up a "Live" executive view in the Power BI Service.
-* **Files:**
-    * [📂 View Lab Files](./labs/lab-4-pinning-visualizations/)
-    * [📄 View Dashboard Evidence](./labs/lab-4-pinning-visualizations/Dashboard_Setup_Screenshots.pdf)
+    * [📂 View Lab Files](./labs/lab-2-using-bars-columns-and-lines/)
+    * [📊 View Report](./labs/lab-2-using-bars-columns-and-lines/Visual_Optimization.pbix)
 
 #### Key Actions Performed:
-* **Dashboard Construction:** Created a new **Dashboard** container in the Power BI Service.
-* **Pinning:** Used the **"Pin Visual"** feature to move specific high-value charts (like the *Order Total Pie Chart*) from the detailed report to the executive dashboard.
-* **Tile Management:** Resized and organized the pinned tiles to create a cohesive, single-screen view of the business's health.
+* **Comparison Optimization:** Converted standard charts into **Clustered Bar Charts** to handle long category labels (e.g., Product Subcategories) effectively.
+* **Trend Analysis:** Configured **Line Charts** with granular time hierarchies (Year > Quarter > Month) to allow users to drill down into seasonal performance.
+* **Multi-Metric Visualization:** Utilized **Combo Charts** (Line and Column) to display two divergent metrics—*Revenue* (Columns) and *Profit Margin* (Line)—on a single visual for correlation analysis.
+
+---
+
+### 🧪 Lab 3: Enhance the report with brand information
+* **Objective:** Professionalize the report by applying corporate branding standards. The goal was to ensure the dashboard aligned with the organization's visual identity using themes, logos, and consistent color palettes.
+* **Files:**
+    * [📂 View Lab Files](./labs/lab-3-enhance-the-report-with-brand-information/)
+    * [📊 View Branded Report](./labs/lab-3-enhance-the-report-with-brand-information/Branded_Sales_Report.pbix)
+
+#### Key Actions Performed:
+* **Theming:** Imported a custom **JSON Theme File** to automatically apply the company's specific color hex codes and font families to all visuals simultaneously.
+* **Visual Assets:** Inserted and positioned the **Company Logo** using the "Insert Image" feature to establish ownership and professional polish.
+* **Formatting:** Adjusted visual borders, shadows, and background transparencies to create a cohesive, "app-like" user interface.
+
+---
+
+### 🧪 Lab 4: Indicating business performance
+* **Objective:** Enable "at-a-glance" monitoring of critical business health metrics. The task involved adding Key Performance Indicators (KPIs) to provide immediate context on whether targets were being met.
+* **Files:**
+    * [📂 View Lab Files](./labs/lab-4-indicating-business-performance/)
+    * [📊 View KPI Dashboard](./labs/lab-4-indicating-business-performance/Performance_Dashboard.pbix)
+
+#### Key Actions Performed:
+* **Headline Metrics:** deployed **Card Visuals** to display high-level aggregates like *Total Revenue* and *Total Orders* as prominent headers.
+* **Target Tracking:** Configured **KPI Visuals** to track *Monthly Sales* against a *Budget Goal*, utilizing the built-in trend axis and color-coding (Green/Red) to instantly signal performance status.
+* **Gauge Charts:** Implemented **Gauge Visuals** to show progress toward fixed annual targets, providing a clear visual representation of percentage-to-goal.
