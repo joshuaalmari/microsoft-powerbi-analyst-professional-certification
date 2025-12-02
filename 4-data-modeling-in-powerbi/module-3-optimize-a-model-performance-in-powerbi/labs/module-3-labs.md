@@ -21,8 +21,8 @@ This module's exercises focus on performance tuning and optimization. The projec
 ### 🧪 Lab 2: Optimizing the columns and Auto date/time
 * **Objective:** Optimize a data model by reducing its memory footprint. The task involved identifying redundant metadata and disabling resource-heavy background features.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-2-optimizing-columns-and-auto-datetime/)
-    * [📊 View Lean Model](./labs/lab-2-optimizing-columns-and-auto-datetime/AdventureWorks_Lean.pbix)
+    * [📂 View Lab Files](./lab-2-optimizing-the-columns-and-auto-date-and-time/)
+    * [📊 View Lean Model](./lab-2-optimizing-the-columns-and-auto-date-and-time/AdventureWorksSales%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Column Pruning:** Identified and **Deleted** the `Payment Method` column as it was unnecessary for the reporting requirements, freeing up memory.
