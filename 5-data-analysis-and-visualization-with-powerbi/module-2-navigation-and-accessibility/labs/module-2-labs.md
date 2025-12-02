@@ -7,8 +7,8 @@ The exercises in this module focus on enhancing User Experience (UX) through acc
 ### 🧪 Lab 1: Creating an accessible report
 * **Objective:** Retrofit an existing sales report to meet accessibility standards (WCAG), ensuring it is usable by stakeholders with visual or motor impairments.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-1-creating-an-accessible-report/)
-    * [📊 View Accessible Report](./labs/lab-1-creating-an-accessible-report/Accessibility_Update.pbix)
+    * [📂 View Lab Files](./lab-1-creating-an-accessible-report/)
+    * [📊 View Accessible Report](./lab-1-creating-an-accessible-report/Creating-an-accessible-report%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Screen Reader Support:** Added descriptive **Alt Text** to charts (e.g., "Sales trends by month") to ensure context is conveyed to non-visual users.
@@ -20,8 +20,8 @@ The exercises in this module focus on enhancing User Experience (UX) through acc
 ### 🧪 Lab 2: Improving accessibility with tooltips
 * **Objective:** Provide granular data details on demand without cluttering the main dashboard. The goal was to make complex charts accessible and understandable for users who need additional context.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-2-improving-accessibility-with-tooltips/)
-    * [📊 View Enhanced Report](./labs/lab-2-improving-accessibility-with-tooltips/Tooltip_Configured.pbix)
+    * [📂 View Lab Files](./lab-2-improving-accessibility-with-tooltips/)
+    * [📊 View Enhanced Report](./lab-2-improving-accessibility-with-tooltips/Tooltip_Configured.pbix)
 
 #### Key Actions Performed:
 * **Contextual Data:** Customized the standard **Tooltip** by dragging additional fields (e.g., *Order Quantity* and *Product Stock*) into the Tooltips field well.
