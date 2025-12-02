@@ -1,4 +1,4 @@
-### 📋 Practical Labs & Exercises
+## 📋 Practical Labs & Exercises
 
 The exercises in this module focus on the final stages of the reporting lifecycle: dashboard creation, distribution, and performance optimization. The projects involve consolidating visuals for executive monitoring, preparing reports for stakeholder consumption, and fine-tuning report performance.
 
