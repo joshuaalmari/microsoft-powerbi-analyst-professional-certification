@@ -36,8 +36,8 @@ This module's exercises focus on performance tuning and optimization. The projec
 ### 🧪 Lab 3: Adding an aggregation
 * **Objective:** Optimize a model containing millions of rows by creating a pre-aggregated summary table. The task involved building a high-performance "Import" table to handle high-level queries while keeping the original detailed data available.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-4-adding-an-aggregation/)
-    * [📊 View Aggregation Model](./labs/lab-4-adding-an-aggregation/Aggregations_Configured.pbix)
+    * [📂 View Lab Files](./lab-3-adding-an-aggregation/raw-files)
+    * [📊 View Aggregation Model](./lab-3-adding-an-aggregation/Adventure-Works-Exercise-Adding-an-aggregation%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Aggregation Construction:** Created a `SalesAgg` table in Power Query by grouping data by `Order Date` and `Customer Key` to summarize Sales and Unit Price.
