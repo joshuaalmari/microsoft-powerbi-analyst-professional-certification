@@ -89,6 +89,7 @@ Used to compare values across categories.
     * *Clustered:* Compares multiple data series side-by-side. Ideal for direct value comparison across categories.
     * *Stacked:* Shows the total value while highlighting segment contributions. Best for seeing the "Whole" and the "Parts" simultaneously.
     * *100% Stacked:* Shows relative percentage contribution rather than absolute totals. Useful for comparing proportions when totals vary significantly.
+    * *Rule of Thumb:* Use **Bar** (Horizontal) if category labels are long. Use **Column** (Vertical) for time-based or short labels.
 * **Ribbon Chart:** A specialized comparison chart used for **ranking**.
     * *Behavior:* Similar to a stacked column chart, but connects segments with "ribbons."
     * *Key Feature:* The category with the highest value *always* moves to the top position for that time period, making rank changes instantly visible.
