@@ -1,4 +1,4 @@
-### 📋 Practical Labs & Exercises
+## 📋 Practical Labs & Exercises
 
 The exercises in this module focus on applying design theory to create cohesive, professional reports. The projects involve managing the design lifecycle—from organizing multiple data sources to applying specific color strategies for emphasis.
 
