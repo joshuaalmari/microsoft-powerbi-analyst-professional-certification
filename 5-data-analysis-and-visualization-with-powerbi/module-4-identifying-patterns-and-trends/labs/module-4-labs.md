@@ -60,8 +60,8 @@ The exercises in this module focus on advanced analytical capabilities. The proj
 ### 🧪 Lab 5: Root cause analysis
 * **Objective:** Enable open-ended exploration of a complex environmental dataset to understand the drivers behind CO2 emissions.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-5-root-cause-analysis/)
-    * [📊 View AI Analysis Report](./labs/lab-5-root-cause-analysis/Emission_Analysis.pbix)
+    * [📂 View Lab Files](./lab-5-root-cause-analysis/)
+    * [📊 View AI Analysis Report](./lab-5-root-cause-analysis/CO2-emissions-by-vehicle%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Decomposition Tree:** Built an interactive tree visual to analyze *Average CO2 Emissions*, allowing users to drill down into any dimension (Powertrain, Engine Size) in any order.
