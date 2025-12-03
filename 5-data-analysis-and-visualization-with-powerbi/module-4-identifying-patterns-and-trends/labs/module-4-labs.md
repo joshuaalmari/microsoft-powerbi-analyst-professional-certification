@@ -8,8 +8,8 @@ The exercises in this module focus on advanced analytical capabilities. The proj
 ### 🧪 Lab 1: Performing an analysis
 * **Objective:** Enhance existing visualizations to provide clearer insights into product performance and demographics using statistical tools.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-1-performing-an-analysis/)
-    * [📊 View Enhanced Report](./labs/lab-1-performing-an-analysis/Advanced_Analysis.pbix)
+    * [📂 View Lab Files](./lab-1-performing-an-analysis/)
+    * [📊 View Enhanced Report](./lab-1-performing-an-analysis/Performing-an-analysis%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Top N Analysis:** Applied a "Top 10" filter to the Funnel Chart to declutter the view, focusing stakeholder attention only on the highest-revenue products.
