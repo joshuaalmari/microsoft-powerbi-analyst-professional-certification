@@ -34,8 +34,8 @@ The exercises in this module focus on advanced visualization techniques, includi
 ### 🧪 Lab 3: Activity: Installing custom visualizations from AppSource
 * **Objective:** Expand the native visualization options to better display regional sales data. The goal was to import and configure a certified custom visual from the Microsoft marketplace.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-3-installing-custom-visualizations/)
-    * [📊 View Custom Visual Report](./labs/lab-3-installing-custom-visualizations/Aster_Plot_Visual.pbix)
+    * [📂 View Lab Files](./lab-3-installing-custom-visualizations/)
+    * [📊 View Custom Visual Report](./lab-3-installing-custom-visualizations/Adventure-Works-Regional-Sales%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **AppSource Integration:** Accessed the "Get more visuals" menu and searched for the **Aster Plot** visual.
