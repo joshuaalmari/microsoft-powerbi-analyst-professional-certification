@@ -20,8 +20,8 @@ The exercises in this module focus on advanced visualization techniques, includi
 ### 🧪 Lab 2: Visualizing data by geographical location
 * **Objective:** Create a focused summary report for regional managers to predict sales trends. The task involved using a specialized map visual to display data for specific US states.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-2-visualizing-data-by-geographical-location/)
-    * [📊 View Map Report](./labs/lab-2-visualizing-data-by-geographical-location/Regional_Sales_Map.pbix)
+    * [📂 View Lab Files](./lab-2-visualizing-data-by-geographical-location/)
+    * [📊 View Map Report](./lab-2-visualizing-data-by-geographical-location/Visualizing-data-by-geographical-location%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Data Preparation:** Reviewed and adjusted data types in the *Column Tools* tab to ensure the location fields were correctly recognized as geospatial data.
