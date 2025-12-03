@@ -21,8 +21,8 @@ The exercises in this module focus on advanced analytical capabilities. The proj
 ### 🧪 Lab 2: Using the Play Axis visualization
 * **Objective:** Visualize how data trends evolve over time using animation. The goal was to track the relationship between advertising spend and sales revenue across different campaigns.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-2-using-the-play-axis-visualization/)
-    * [📊 View Animated Report](./labs/lab-2-using-the-play-axis-visualization/Animated_Trends.pbix)
+    * [📂 View Lab Files](./lab-2-using-the-play-axis-visualization/)
+    * [📊 View Animated Report](./lab-2-using-the-play-axis-visualization/Time-series-analysis%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Scatter Plot Configuration:** Plotted *Sales Revenue* vs. *Profit Margin* to analyze the correlation between spend and return.
