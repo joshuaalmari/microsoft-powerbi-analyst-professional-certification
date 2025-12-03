@@ -22,8 +22,8 @@ The exercises in this module focus on applying design theory to create cohesive,
 ### 🧪 Lab 2: Highlighting key information
 * **Objective:** Format a sales-versus-target report to emphasize critical data points for executive review. The task focused on using themes and conditional logic to make key performance indicators stand out immediately.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-2-highlighting-key-information/)
-    * [📊 View Highlighted Report](./labs/lab-2-highlighting-key-information/Highlighting_Key_Information.pbix)
+    * [📂 View Lab Files](./lab-2-highlighting-key-information/raw-files)
+    * [📊 View Highlighted Report](./lab-2-highlighting-key-information/Highlighting%20key%20information.pbix)
 
 #### Key Actions Performed:
 * **Visual Consistency:** Applied the **"Accessible City Park"** report theme to instantly standardize fonts and color palettes across the Table and Column Chart visuals.
