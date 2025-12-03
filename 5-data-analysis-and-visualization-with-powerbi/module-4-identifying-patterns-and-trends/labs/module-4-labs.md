@@ -9,7 +9,7 @@ The exercises in this module focus on advanced analytical capabilities. The proj
 * **Objective:** Enhance existing visualizations to provide clearer insights into product performance and demographics using statistical tools.
 * **Files:**
     * [📂 View Lab Files](./lab-1-performing-an-analysis/)
-    * [📊 View Enhanced Report](./lab-1-performing-an-analysis/Performing-an-analysis%20-%20Final.pbix)
+    * [📊 View Report](./lab-1-performing-an-analysis/Performing-an-analysis%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Top N Analysis:** Applied a "Top 10" filter to the Funnel Chart to declutter the view, focusing stakeholder attention only on the highest-revenue products.
@@ -22,7 +22,7 @@ The exercises in this module focus on advanced analytical capabilities. The proj
 * **Objective:** Visualize how data trends evolve over time using animation. The goal was to track the relationship between advertising spend and sales revenue across different campaigns.
 * **Files:**
     * [📂 View Lab Files](./lab-2-using-the-play-axis-visualization/)
-    * [📊 View Animated Report](./lab-2-using-the-play-axis-visualization/Time-series-analysis%20-%20Final.pbix)
+    * [📊 View Report](./lab-2-using-the-play-axis-visualization/Time-series-analysis%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Scatter Plot Configuration:** Plotted *Sales Revenue* vs. *Profit Margin* to analyze the correlation between spend and return.
