@@ -20,8 +20,8 @@ The exercises in this module focus on the final stages of the reporting lifecycl
 ### 🧪 Lab 2: Sharing a report
 * **Objective:** Prepare a comprehensive financial performance report for executive review. The goal was to structure the report for easy readability, publish it to a secure workspace, and generate static exports for offline meetings.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-2-sharing-a-report/)
-    * [📊 View Final Report](./labs/lab-2-sharing-a-report/Financial_Performance_Report.pbix)
+    * [📂 View Lab Files](./lab-2-sharing-a-report/)
+    * [📊 View Final Report](./lab-2-sharing-a-report/Adventure-Works-Product-Sales-Report%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Pagination:** Organized the report into distinct pages (e.g., "Summary" vs. "Details") to improve navigation and reduce visual clutter.
@@ -30,11 +30,11 @@ The exercises in this module focus on the final stages of the reporting lifecycl
 
 ---
 
-### 🧪 Lab 3: Tuning report performance
+### 🧪 Lab 3: Improving DAX performance
 * **Objective:** Optimize a sluggish sales report to improve load times and interactivity. The task involved diagnosing specific performance bottlenecks and refactoring inefficient DAX code.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-3-tuning-report-performance/)
-    * [📊 View Optimized Model](./labs/lab-3-tuning-report-performance/Optimized_Sales_Report.pbix)
+    * [📂 View Lab Files](./lab-3-improving-DAX-performance/)
+    * [📊 View Optimized Model](./lab-3-improving-DAX-performance/Improving-DAX-performance%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Diagnosis:** Used the **Performance Analyzer** to record visual load times and identified the "Total Sales by Year" area chart as the primary bottleneck.
