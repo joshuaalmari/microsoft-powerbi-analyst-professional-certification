@@ -71,18 +71,41 @@ This visual acts as an **Exploratory Root Cause Tool**. It allows users to break
 
 ---
 
-## 🔮 Forecasting & Advanced Analytics
+## 🔍 The "Analyze" Feature (Automated Insights)
 
-### The "Analyze" Feature
-* **Function:** An automated insight tool accessed by right-clicking on a chart data point.
-* **Capabilities:**
-    * **Explain the Increase/Decrease:** Compares two time periods and calculates which factors contributed most to the change (e.g., "The 10% increase was driven mostly by the 'Bikes' category").
-    * **Find where the distribution is different:** Compares a selected segment against the overall dataset.
+An AI tool accessed by **right-clicking** a data point on a chart.
 
-### Time Series Analysis (Analytics Pane)
-* **Forecasting:** Uses exponential smoothing algorithms to predict future values based on historical patterns.
-    * *Configuration:* Users can set the **Forecast Length** (e.g., next 6 months) and **Confidence Interval** (e.g., 95% certainty range).
-* **Reference Lines:** Adding context to charts using the Analytics pane.
-    * **Constant Lines:** Fixed targets (e.g., "Budget Line").
-    * **Min/Max/Average Lines:** Dynamic lines that calculate the statistical baseline of the visual.
-    * **Error Bars:** Visualizes the uncertainty or variability of data.
+### Capabilities
+* **Explain the Increase/Decrease:**
+    * *Context:* Time-series visuals (Line/Area/Bar).
+    * *Output:* A "Waterfall Chart" that breaks down exactly which categories contributed most to the change (e.g., "The 10% increase was driven by 'Bicycles' (+15%) but offset by 'Accessories' (-5%)").
+* **Find where this distribution is different:**
+    * *Context:* Categorical visuals.
+    * *Output:* Identifies factors disproportionately represented in the selected segment compared to the whole.
+
+---
+
+## 🔮 Analytics Pane: Deep Dive
+
+The **Analytics Pane** (Magnifying Glass icon) allows you to overlay statistical context onto charts.
+
+### Error Bars
+Visualizes the uncertainty, variability, or margin of error associated with data points.
+* **Types of Error Options:**
+    1.  **Standard Error:** Standard deviation divided by the square root of the sample size (Precision of the mean).
+    2.  **Standard Deviation:** The average deviation from the mean (Data dispersion).
+    3.  **Confidence Interval:** The range where the true value likely lies (e.g., 95% confidence).
+    4.  **Custom:** User-defined upper/lower bounds.
+* **Visual Style:** Can be displayed as **Bars** (whiskers) or **Error Bands** (shaded areas).
+
+### Forecasting
+Predicts future values based on historical trends using exponential smoothing.
+* **Configuration Parameters:**
+    * **Forecast Length:** The number of points/periods to predict (e.g., 10 months).
+    * **Confidence Interval:** The probability range (e.g., 95%). Wider grey bands indicate higher uncertainty/volatility.
+    * **Seasonality:** Manually defining the cycle length (e.g., 12 points for annual seasonality) helps the model detect recurring patterns.
+    * **Ignore Last:** Critical for excluding incomplete data (e.g., the current month's partial sales) so it doesn't skew the prediction downwards.
+
+### Reference Lines
+* **Constant Line:** A fixed value (e.g., Target = $1M).
+* **Dynamic Lines:** Min, Max, Average, Median, and Percentile lines that recalculate as the data is filtered.
