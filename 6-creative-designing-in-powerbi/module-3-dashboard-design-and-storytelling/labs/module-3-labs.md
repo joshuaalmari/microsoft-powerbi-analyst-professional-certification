@@ -7,8 +7,8 @@ The exercises in this module focus on distributing insights effectively. The pro
 ### 🧪 Lab 1: Optimizing a dashboard
 * **Objective:** Transform an existing desktop dashboard into a mobile-friendly experience for the Chief Product Officer. The goal was to create a unified view of product data accessible on cellular devices.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-1-optimizing-a-dashboard/)
-    * [📄 View Mobile Layout](./labs/lab-1-optimizing-a-dashboard/Optimizing-a-dashboard.pdf)
+    * [📂 View Lab Files](./lab-1-optimizing-a-dashboard/)
+    * [📄 View Mobile Layout](./lab-1-optimizing-a-dashboard/Optimizing-a-dashboard.pdf)
 
 #### Key Actions Performed:
 * **Dashboard Creation:** Published a desktop report to the Power BI Service and pinned visuals from multiple pages (Products and Categories) to a new "Product Sales" dashboard.
