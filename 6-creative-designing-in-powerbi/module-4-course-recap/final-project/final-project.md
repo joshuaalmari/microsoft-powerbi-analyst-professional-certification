@@ -8,7 +8,7 @@ This final module features a comprehensive capstone project that consolidates th
 * **Objective:** Create a cohesive data story presenting quarterly sales performance to two distinct audiences: the Sales Management Team and the Executive Board. The goal was to tailor the level of detail and presentation format (Report vs. Dashboard) to suit each stakeholder's needs.
 * **Files:**
     * [📂 View Project Files](./raw-files)
-    * [📊 View Final Report](./Adventure-Works-Quarterly-Report%20-%20Final.pbix)
+    * [📊 View Final Report](./project-files)
 
 #### Key Actions Performed:
 * **Data Exploration:** Analyzed the dataset (Sales, Region, Products) to identify the specific measures required to support a "Growth" narrative, such as *Revenue*, *Profit*, and *Revenue YoY %*.
