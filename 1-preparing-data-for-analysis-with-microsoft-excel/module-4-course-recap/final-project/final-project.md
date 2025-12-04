@@ -4,7 +4,7 @@ This final module features a comprehensive capstone project that integrates all 
 
 ---
 
-### 🏆 Final Capstone Project: Executive Data Summary
+### 🏆 Final Project: Executive Data Summary
 * **Objective:** Prepare a high-level Q1 Sales Report for a management meeting. The task involves cleaning raw product data, calculating quarterly sales performance across two years (2022 vs. 2023), and identifying year-over-year percentage growth.
 * **Files:**
     * [📂 View Project Files](./)
