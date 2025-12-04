@@ -32,8 +32,8 @@ The exercises in this module focus on distributing insights effectively. The pro
 ### 🧪 Lab 3: The elements of a data story
 * **Objective:** Craft a compelling narrative about company growth for the CEO. The project required identifying key measures, selecting appropriate visuals, and structuring a multi-page report to tell a clear story of success.
 * **Files:**
-    * [📂 View Lab Files](./lab-3-elements-of-a-data-story/)
-    * [📊 View Story Report](./lab-3-elements-of-a-data-story/The-elements-of-a-data-story%20-%20Final.pbix)
+    * [📂 View Lab Files](./lab-3-the-elements-of-a-data-story/)
+    * [📊 View Report](./lab-3-the-elements-of-a-data-story/The-elements-of-a-data-story%20-%20Final.pbix)
 
 #### Key Actions Performed:
 * **Data Exploration:** Identified high-impact measures (`Total Revenue`, `Profit`, `YoY Growth %`) from the dataset to serve as the "Key Highlights" of the story.
