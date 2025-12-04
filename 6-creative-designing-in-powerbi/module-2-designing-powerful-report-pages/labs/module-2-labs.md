@@ -47,8 +47,8 @@ The exercises in this module focus on advanced visualization techniques, includi
 ### 🧪 Lab 4: Activity: Adding a chart using Python
 * **Objective:** Leverage Python scripting to create a highly customized bar chart that goes beyond standard Power BI capabilities.
 * **Files:**
-    * [📂 View Lab Files](./labs/lab-4-adding-a-chart-using-python/)
-    * [📊 View Python Visual](./labs/lab-4-adding-a-chart-using-python/Python_Sales_Chart.pbix)
+    * [📂 View Lab Files](./lab-4-adding-a-chart-using-python/)
+    * [📊 View Python Visual](./lab-4-adding-a-chart-using-python/Adventure-Works-Sales%20-%20.pbix)
 
 #### Key Actions Performed:
 * **Environment Setup:** Configured Power BI Options to detect the local **Python home directory**.
