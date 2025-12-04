@@ -23,8 +23,8 @@ The exercises in this module focus on distributing insights effectively. The pro
     * [🖼️ View Documentation](./lab-2-creating-a-qr-code/Creating%20a%20QR%20code.pdf)
 
 #### Key Actions Performed:
-* **Tile-Level Access:** Opened a specific "Sales by Country" tile in **Focus Mode** and generated a QR code directly for that visual, enabling targeted sharing.
-* **Report-Level Access:** Generated a QR code for the entire "Adventure Works Sales" report to provide broad access to the full dataset.
+* **Tile-Level Access:** Opened a specific tile in **Focus Mode** and generated a QR code directly for that visual, enabling targeted sharing.
+* **Report-Level Access:** Generated a QR code for the entire report to provide broad access to the full dataset.
 * **Distribution Strategy:** Downloaded the codes as JPG images to be embedded in emails or printed documents for offline access.
 
 ---
