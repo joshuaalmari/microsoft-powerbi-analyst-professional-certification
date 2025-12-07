@@ -98,11 +98,23 @@ A Parameter acts like a **variable** or a placeholder. Instead of hard-coding a 
     * *Result:* Changing the parameter value automatically updates the query sent to the database, allowing you to switch regions without rewriting code.
 
 ### 2. Query Parameters (Power Query)
-These parameters live in the backend transformation layer.
+These parameters live in the backend transformation layer (Power Query Editor) and act as **variables** to control data import, ensuring the data is filtered and optimized at the source (Query Folding).
 * **Definition:** Variables stored in the Power Query Editor that influence data import.
 * **Use Cases:**
     * **Environment Switching:** Define a `ServerName` parameter. By changing this one text box, you can repoint the entire report from a "Test Database" to a "Live Database".
     * **Dynamic Filtering:** Pass a parameter to a Custom Function to filter data rows *before* they are imported (e.g., loading only data for a specific "Region" to improve performance).
+
+* **Example: Dynamic Filtering (Single Value)**
+    This technique is used to improve performance by only loading a specific subset of data (e.g., one region's sales) from a massive dataset.
+    1.  **Create Parameter:** Define a `RegionParameter` in Power Query and set its initial text value (e.g., `'Asia'`).
+    2.  **Modify Source Query:** In the advanced options of the SQL connector, the SQL statement is written to inject this parameter. Power Query's M language is used to concatenate the parameter value into the SQL string.
+        * *Static Query:* `SELECT * FROM Sales WHERE Region = 'Asia'`
+        * *Dynamic Query Syntax:* `="SELECT * FROM Sales WHERE Region = '" & RegionParameter & "'"`
+    3.  **Result:** When the `RegionParameter` is changed (e.g., to `'Europe'`), a new, optimized query is sent to the SQL server, retrieving only the data for Europe.
+
+* **Example: Multi-Value Dynamic Reporting (Advanced)**
+    * **Complexity:** Multi-dynamic reports are explicitly noted as **more difficult to create** than single-value reports.
+    * **Mechanism:** They require the use of **Custom Functions** in Power Query. A Custom Function is a reusable block of transformation logic that accepts a list of parameters (e.g., a list of Region IDs, or multiple file paths) and processes the data corresponding to each item in that list, allowing for robust filtering and combining of complex, dynamic inputs.
 
 ### 3. What-If Parameters (Scenario Analysis)
 These parameters live in the frontend report layer.
