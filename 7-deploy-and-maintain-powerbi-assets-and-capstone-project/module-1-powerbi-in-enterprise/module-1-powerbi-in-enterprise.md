@@ -115,6 +115,11 @@ These parameters live in the backend transformation layer (Power Query Editor) a
 * **Example: Multi-Value Dynamic Reporting (Advanced)**
     * **Complexity:** Multi-dynamic reports are explicitly noted as **more difficult to create** than single-value reports.
     * **Mechanism:** They require the use of **Custom Functions** in Power Query. A Custom Function is a reusable block of transformation logic that accepts a list of parameters (e.g., a list of Region IDs, or multiple file paths) and processes the data corresponding to each item in that list, allowing for robust filtering and combining of complex, dynamic inputs.
+   * **Workflow:**
+        1.  **Source Setup:** Create an Excel spreadsheet listing all the required regions (e.g., Row 1: "Europe", Row 2: "Asia"). Import this sheet into Power Query.
+        2.  **Function Creation:** Convert your original SQL query into a **Custom Function** (e.g., `GetSalesDataFromRegions`). This function takes a single "Region Name" as an input and returns that region's data.
+        3.  **Execution:** Use the **"Invoke Custom Function"** feature on your Excel table. Power Query will loop through the Excel list, running the SQL function for *each* row (Region) found in the file.
+        4.  **Result:** The "Invoked Function" column expands to combine data from all selected regions into a single, unified table.
 
 ### 3. What-If Parameters (Scenario Analysis)
 These parameters live in the frontend report layer.
@@ -123,6 +128,12 @@ These parameters live in the frontend report layer.
 * **Application:**
     * **Forecasting:** "What happens to Revenue if we raise prices by **X%**?" (The slider value multiplies the revenue measure).
     * **Sensitivity Analysis:** "How does our profit margin change if costs increase by **Y%**?"
+* **Implementation Steps (Forecasting Example):**
+    1.  **Creation:** Go to **Modeling Tab > New Parameter > Numeric Range**. Define the range (e.g., Min: 1, Max: 2, Increment: 0.1).
+    2.  **The Engine:** Power BI automatically creates a disconnected table with a `GENERATE SERIES` DAX function and a measure to capture the user's selection (e.g., `SelectedValue = 1.2`).
+    3.  **The Logic:** You create a new DAX measure that connects this slider to your actual data.
+        * *Formula:* `Forecast Sales = SUM(Sales[Amount]) * 'Forecast Parameter'[SelectedValue]`
+    4.  **The Result:** When the user slides the bar to "1.2" (representing a 20% increase), the charts update instantly to show what revenue *would* look like under those specific conditions.
 * **Benefit:** Transforms the report from a static historical record into a forward-looking planning tool.
 
 ### 4. Field Parameters (Visual Flexibility)
