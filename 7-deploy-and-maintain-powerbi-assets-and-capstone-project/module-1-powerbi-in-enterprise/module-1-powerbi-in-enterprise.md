@@ -89,24 +89,31 @@ Power BI analysts often bypass the "Import Table" wizard and write direct querie
 
 ## 🎛️ Dynamic Reporting with Parameters
 
-Parameters allow reports to adapt to user input or changing environments without manual editing.
+Standard reports provide a static snapshot of data. Dynamic reports use **Parameters** to adapt the report logic based on user input or environment variables.
 
-### 1. Query Parameters (Power Query)
-* **Definition:** Variables stored in the Power Query Editor (e.g., `ServerName`, `DatabaseName`).
+### 1. The Core Concept: Parameters as Variables
+A Parameter acts like a **variable** or a placeholder. Instead of hard-coding a specific rule (e.g., "Show me Sales for **Asia**"), you replace the specific value with a parameter (e.g., "Show me Sales for **[RegionParameter]**").
+* **Static:** `SELECT * FROM Sales WHERE Region = 'Asia'` (Hard-coded).
+* **Dynamic:** `SELECT * FROM Sales WHERE Region = ` **`& RegionParameter`** (Variable).
+    * *Result:* Changing the parameter value automatically updates the query sent to the database, allowing you to switch regions without rewriting code.
+
+### 2. Query Parameters (Power Query)
+These parameters live in the backend transformation layer.
+* **Definition:** Variables stored in the Power Query Editor that influence data import.
 * **Use Cases:**
-    * **Environment Switching:** Change a single parameter to switch the report source from a "Development" database to a "Production" database.
-    * **Dynamic Loading:** Pass a parameter to a Custom Function to filter data rows *before* import.
-* **Custom Functions:** Reusable transformation logic that accepts a parameter (e.g., a file path) to process multiple files identically.
+    * **Environment Switching:** Define a `ServerName` parameter. By changing this one text box, you can repoint the entire report from a "Test Database" to a "Live Database".
+    * **Dynamic Filtering:** Pass a parameter to a Custom Function to filter data rows *before* they are imported (e.g., loading only data for a specific "Region" to improve performance).
 
-### 2. What-If Parameters (Scenario Analysis)
+### 3. What-If Parameters (Scenario Analysis)
+These parameters live in the frontend report layer.
 * **Definition:** A user-controlled slider or input box placed on the report canvas.
-* **Mechanism:** Power BI creates a disconnected table generating a series of values (e.g., 0 to 20 by increments of 1) and a DAX measure to capture the user's selection.
+* **Mechanism:** Power BI creates a **disconnected table** generating a series of values (e.g., 0 to 20 by increments of 1) and a DAX measure to capture the user's selection.
 * **Application:**
-    * **Forecasting:** "What happens to Revenue if we raise prices by **X%**?"
+    * **Forecasting:** "What happens to Revenue if we raise prices by **X%**?" (The slider value multiplies the revenue measure).
     * **Sensitivity Analysis:** "How does our profit margin change if costs increase by **Y%**?"
 * **Benefit:** Transforms the report from a static historical record into a forward-looking planning tool.
 
-### 3. Field Parameters (Visual Flexibility)
+### 4. Field Parameters (Visual Flexibility)
 * **Definition:** A feature that allows users to dynamically change the measures or dimensions displayed in a visual.
 * **Use Case:** A single bar chart where the user can toggle the X-Axis between "Region," "Product," and "Salesperson" using a slicer.
 * **Benefit:** Drastically reduces the number of static charts needed on a page, decluttering the report.
